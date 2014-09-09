@@ -1,5 +1,5 @@
-#ifndef ARC_BIND_HPP
-#define ARC_BIND_HPP
+#ifndef BIND_HPP
+#define BIND_HPP
 
 #include "function.hpp"
 

@@ -1,5 +1,5 @@
-#ifndef ARC_SMART_POINT_HPP
-#define ARC_SMART_POINT_HPP
+#ifndef SMART_POINT_HPP
+#define SMART_POINT_HPP
 namespace cpptool {
 
 class counter
