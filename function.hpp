@@ -76,6 +76,7 @@ private:
 };
 
 
+// signature 被特化为R()
 template<class Signature>
 class Function;
 template<class R>
@@ -92,8 +93,6 @@ public:
     Function(const Function<R()>& val)
     {
         Function<R()>* pFun = const_cast<Function<R()>*>(&val);
-        if (pFun == this)
-            return;
         pFunBase_ = pFun->pFunBase_;
     }
 
@@ -130,9 +129,6 @@ public:
     Function(const Function<R(ARG)>& val)
     {
         Function<R(ARG)>* pFun = const_cast<Function<R(ARG)>*>(&val);
-        if (pFun == this)
-            return;
-
         pFunBase_ = pFun->pFunBase_;
     }
 
